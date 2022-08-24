@@ -1,0 +1,22 @@
+/* палитра цветов */
+/* Основной цвет #757575 */
+/* Вторичный цвет #212121 */
+/* акцент #2196F3 */
+/* Основной цвет фона #ffffff */
+/* Основной цвет иконки #AFB1B8 */
+:root {
+  --main-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --White: #ffffff;
+  --main-font-family: 'Roboto', sans-serif;
+  --main-fill-icon: #afb1b8;
+  --trans-dur: 250ms;
+  --trans-tim-func: cubic-bezier(0.4, 0, 0.2, 1);
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  background-color: #ffffff;
+  color: #757575;
+}
