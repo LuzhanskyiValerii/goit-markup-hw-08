@@ -204,8 +204,6 @@ img {
   }
   .mobile-menu__link {
     position: relative;
-    font-family: "Roboto";
-    font-style: normal;
     font-weight: 500;
     font-size: 40px;
     line-height: 47px;
@@ -226,8 +224,6 @@ img {
     margin-bottom: 32px;
   }
   .mobile-menu-contact__link {
-    font-family: "Roboto";
-    font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
@@ -442,8 +438,6 @@ img {
   padding: 10px 24px;
   border-radius: 4px;
   border: transparent;
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
@@ -636,7 +630,6 @@ img {
 
 .team__text {
   margin-bottom: 16px;
-  font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
@@ -680,7 +673,6 @@ img {
 @media screen and (min-width: 1200px) {
   .team__title {
     margin-bottom: 50px;
-    font-weight: 700;
     font-size: 36px;
     line-height: 42px;
   }
@@ -884,7 +876,6 @@ img {
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
-  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.03em;
@@ -1270,7 +1261,6 @@ img {
   bottom: 0;
   overflow: auto;
   transform: translate(0, 100%);
-  font-weight: 400;
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0.03em;
