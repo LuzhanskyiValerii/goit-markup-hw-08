@@ -19,20 +19,27 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="container page-header__container">
-        <nav class="nav">
-          <a class="logo page-header__logo link" href="/"> <span class="web">Web</span>Studio</a>
-          <ul class="list nav__list nav">
+      <div class="page-header__container container">
+        <nav class="page-header__nav nav">
+          <a class="page-header__logo link logo" href="/"> <span class="web">Web</span>Studio</a>
+          <ul class="nav__list list nav">
             <li class="nav__item">
               <a class="nav__link link" href="./index.html">Студія</a>
             </li>
             <li class="nav__item">
               <a class="nav__link link nav__link_current" href="./portfolio.html">Портфоліо</a>
             </li>
-            <li class="nav__item"><a class="nav__link link" href="">Контакти</a></li>
+            <li class="nav__item">
+              <a class="nav__link link" href="">Контакти</a>
+            </li>
           </ul>
         </nav>
-        <ul class="list nav contact">
+        <button type="button" class="mobile-menu-open" data-menu-open>
+          <svg class="mobile-menu-btn__icon" width="40" height="40">
+            <use href="./img/icons.svg#menu"></use>
+          </svg>
+        </button>
+        <ul class="contact nav list">
           <li class="contact__item">
             <a class="contact__link link" href="info@devstudio.com">
               <svg class="contact__icon" width="16" height="16">
@@ -50,18 +57,66 @@
           </li>
         </ul>
       </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button type="button" class="modal-menu-btn" data-menu-close>
+            <svg class="modal-menu-btn__icon" width="40" height="40">
+              <use href="./img/icons.svg#modal-window__close-btn"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu__list list">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="./index.html"
+                >Студія</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link mobile-menu__link-current link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="">Контакти</a>
+            </li>
+          </ul>
+          <ul class="mobile-menu-contact list">
+            <li class="mobile-menu-contact__item">
+              <a class="mobile-menu-contact__link link" href="tel:+380961111111">
+                +38 096 111 11 11
+              </a>
+            </li>
+            <li class="mobile-menu-contact__item">
+              <a class="mobile-menu-contact__link link" href="info@devstudio.com">
+                <span lang="en"> info@devstudio.com </span>
+              </a>
+            </li>
+          </ul>
+          <ul class="mobile-menu-social list">
+            <li class="mobile-menu-social__item">
+              <a href="" class="mobile-menu-social__link link">Instagram</a>
+            </li>
+            <li class="mobile-menu-social__item">
+              <a href="" class="mobile-menu-social__link link">Twitter</a>
+            </li>
+            <li class="mobile-menu-social__item">
+              <a href="" class="mobile-menu-social__link link">Facebook</a>
+            </li>
+            <li class="mobile-menu-social__item">
+              <a href="" class="mobile-menu-social__link link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <main>
       <section class="portfolio">
         <div class="container">
-          <ul class="list menu">
+          <ul class="list portfolio-menu">
             <li><button type="button" class="portfolio__button button">Все</button></li>
             <li><button type="button" class="portfolio__button button">Веб-сайти</button></li>
             <li><button type="button" class="portfolio__button button">Додатки</button></li>
             <li><button type="button" class="portfolio__button button">Дизайн</button></li>
             <li><button type="button" class="portfolio__button button">Маркетинг</button></li>
           </ul>
-          <ul class="list portfolio__list">
+          <!-- <ul class="list portfolio__list">
             <li class="portfolio__card">
               <div class="portfolio-card__img-wrapper">
                 <img src="./img/img4.jpg" alt="Веб-сайт" width="370" height="294" />
@@ -199,11 +254,12 @@
                 <p class="portfolio-card__text">Додаток</p>
               </div>
             </li>
-          </ul>
+          </ul> -->
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
+
       <div class="container footer-container">
         <div class="footer-contact-section">
           <a class="logo link footer__logo" href="/"><span class="footer-web">Web</span>Studio</a>
@@ -279,7 +335,8 @@
           </div>
         </form>
       </div>
-    </footer>
-    <script src="./js/modal.js"></script>
+    </footer> -->
+    <script src="./js/mobile-menu.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
   </body>
 </html>

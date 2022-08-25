@@ -1,0 +1,156 @@
+@media screen and (max-width: 767px) {
+  .mobile-menu {
+    position: fixed;
+    z-index: 500;
+    width: 100%;
+    height: 100%;
+    max-height: 796px;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition-property: opacity, visibility;
+    transition-duration: var(--trans-dur);
+    transition-timing-function: var(--trans-tim-func);
+
+    box-shadow: 0 0 100vmax rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+  .mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .mobile-menu-open {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  .mobile-menu__container {
+    position: relative;
+    padding-left: 40px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .modal-menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  .modal-menu-btn__icon {
+    fill: #212121;
+    transition-property: fill;
+    transition-duration: var(--trans-dur);
+    transition-timing-function: var(--trans-tim-func);
+
+    .modal-menu-btn:hover > &,
+    .modal-menu-btn:focus > & {
+      fill: #2196f3;
+    }
+  }
+
+  .mobile-menu__item:not(:last-child) {
+    margin-bottom: 35px;
+  }
+
+  .mobile-menu__link {
+    position: relative;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    color: #212121;
+    transition-property: color;
+    transition-duration: var(--trans-dur);
+    transition-timing-function: var(--trans-tim-func);
+    &:focus {
+      color: #2196f3;
+    }
+  }
+
+  .mobile-menu__link-current {
+    text-align: center;
+    color: var(--accent-color);
+  }
+  // .mobile-menu__link-current::after {
+  //   position: absolute;
+  //   bottom: -4px;
+  //   left: 0;
+  //   content: '';
+  //   width: 100%;
+  //   height: 4px;
+  //   background-color: var(--accent-color);
+  //   border-radius: 2px;
+  // }
+
+  .mobile-menu-contact__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  .mobile-menu-contact__link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: #757575;
+    transition-property: font-size, line-height;
+    transition-duration: var(--trans-dur);
+    transition-timing-function: var(--trans-tim-func);
+    &:focus {
+      font-size: 34px;
+      line-height: 40px;
+      color: #2196f3;
+    }
+  }
+  .mobile-menu-social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .mobile-menu-social__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+
+    letter-spacing: 0.02em;
+    color: #2196f3;
+  }
+  .mobile-menu-social__item:not(:last-child)::after {
+    content: '';
+    width: 22px;
+    height: 0;
+    margin-left: 10px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+  .mobile-menu-open {
+    display: none;
+  }
+}

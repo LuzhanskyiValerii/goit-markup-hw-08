@@ -6,59 +6,42 @@
   & .logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 28px;
     letter-spacing: 0.03em;
     color: var(--White);
     margin: 0;
     margin-bottom: 20px;
   }
 }
-
-.footer-container {
-  display: flex;
-  align-items: baseline;
-}
-
-.footer-contact-section {
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-  margin-right: 70px;
-}
-
-.footer-join__text {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--White);
-  margin-bottom: 20px;
-}
-
-.footer__logo {
-  margin-bottom: 20px;
-}
-
 .footer-web {
   color: var(--accent-color);
 }
-
-.footer-list__item:not(:last-child) {
-  margin-bottom: 9px;
+.footer-container {
+  display: flex;
+  flex-direction: column;
 }
-
+.footer-contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
 .footer-list__link {
   font-size: 14px;
   font-style: normal;
-  line-height: 1.71;
+  line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--White);
 }
-
+.footer-list__item:not(:last-child) {
+  margin-bottom: 8px;
+}
 .footer-contact {
   font-size: 14px;
   font-style: normal;
@@ -73,21 +56,27 @@
     color: var(--accent-color);
   }
 }
-
 .footer-join {
   display: flex;
   flex-direction: column;
-  margin-right: 93px;
+  align-items: center;
+  margin-bottom: 60px;
 }
-
+.footer-join__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--White);
+  margin-bottom: 20px;
+}
 .footer-social-menu {
   display: flex;
 }
-
-.footer-social-menu__item {
+.footer-social-menu__item:not(:last-child) {
   margin-right: 10px;
 }
-
 .footer-social-menu__link {
   display: flex;
   justify-content: center;
@@ -105,27 +94,19 @@
     background-color: #2196f3;
   }
 }
-
 .footer-social-menu__icon {
   width: 20px;
   height: 20px;
   fill: var(--White);
 }
-
 .footer-form {
   display: flex;
   flex-direction: column;
 }
-
-.footer-form__wrapper {
-  display: flex;
-}
-
 .footer-form__label {
-  display: block;
+  display: flex;
+  justify-content: center;
   margin-bottom: 20px;
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -133,19 +114,14 @@
   text-transform: uppercase;
   color: var(--White);
 }
-
 .footer-form__input {
-  width: 385px;
+  margin-bottom: 20px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -159,15 +135,17 @@
     outline: none;
   }
 }
-
+.footer-form__btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
 .footer-form__btn-send {
   display: flex;
   align-items: center;
   text-align: center;
-  margin-left: 12px;
   padding: 10px 28px;
-  font-family: 'Roboto';
-  font-style: normal;
+  width: 200px;
+  height: 50px;
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
@@ -190,7 +168,63 @@
     color: var(--White);
   }
 }
-
 .btn-send__icon {
   margin-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .footer-form {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+.footer-container {
+  justify-content: flex-start;
+}
+.footer {
+  & .logo {
+    font-size: 26px;
+    line-height: 31px;
+  }
+  .footer-list__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+}
+.footer-contact-section {
+  display: flex;
+  align-items: flex-start;
+  margin-right: 70px;
+  width: 231px;
+}
+.footer-list {
+  align-items: flex-start;
+}
+.footer-join {
+  align-items: flex-start;
+  margin-right: 93px;
+  margin-bottom: 0;
+}
+.footer-form {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  width: 570px;
+}
+.footer-form__label {
+  justify-content: flex-start;
+  width: 100%;
+}
+.footer-form__input {
+  width: 358px;
+  margin-right: 12px;
+}
 }
