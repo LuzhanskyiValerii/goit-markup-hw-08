@@ -66,12 +66,12 @@
           </button>
           <ul class="mobile-menu__list list">
             <li class="mobile-menu__item">
-              <a class="mobile-menu__link link" href="./index.html"
-                >Студія</a
-              >
+              <a class="mobile-menu__link link" href="./index.html">Студія</a>
             </li>
             <li class="mobile-menu__item">
-              <a class="mobile-menu__link mobile-menu__link-current link" href="./portfolio.html">Портфоліо</a>
+              <a class="mobile-menu__link mobile-menu__link-current link" href="./portfolio.html"
+                >Портфоліо</a
+              >
             </li>
             <li class="mobile-menu__item">
               <a class="mobile-menu__link link" href="">Контакти</a>
@@ -116,10 +116,33 @@
             <li><button type="button" class="portfolio__button button">Дизайн</button></li>
             <li><button type="button" class="portfolio__button button">Маркетинг</button></li>
           </ul>
-          <!-- <ul class="list portfolio__list">
+          <ul class="list portfolio__list">
             <li class="portfolio__card">
               <div class="portfolio-card__img-wrapper">
-                <img src="./img/img4.jpg" alt="Веб-сайт" width="370" height="294" />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./img/portfolio/desktop/desktop-img1.jpg    1x,
+                      ./img/portfolio/desktop/desktop-img1@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/portfolio/tablet/tablet-img1.jpg    1x,
+                      ./img/portfolio/tablet/tablet-img1@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./img/portfolio/mobile/mobile-img1.jpg    1x,
+                      ./img/portfolio/mobile/mobile-img1@2x.jpg 2x
+                    "
+                  />
+                  <img src="./img/portfolio/mobile/mobile-img1.jpg" alt="Веб-сайт" width="100%" />
+                </picture>
                 <p class="portfolio__overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                   це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
@@ -133,7 +156,30 @@
             </li>
             <li class="portfolio__card">
               <div class="portfolio-card__img-wrapper">
-                <img src="./img/img5.jpg" alt="Дизайн" width="370" height="294" />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./img/portfolio/desktop/desktop-img2.jpg    1x,
+                      ./img/portfolio/desktop/desktop-img2@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/portfolio/tablet/tablet-img2.jpg    1x,
+                      ./img/portfolio/tablet/tablet-img2@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./img/portfolio/mobile/mobile-img2.jpg    1x,
+                      ./img/portfolio/mobile/mobile-img2@2x.jpg 2x
+                    "
+                  />
+                  <img src="./img/portfolio/mobile/mobile-img2.jpg"" alt="Дизайн" width="100%" />
+                </picture>
                 <p class="portfolio__overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                   це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
@@ -149,7 +195,30 @@
             </li>
             <li class="portfolio__card">
               <div class="portfolio-card__img-wrapper">
-                <img src="./img/img6.jpg" alt="Приложение" width="370" height="294" />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./img/portfolio/desktop/desktop-img3.jpg    1x,
+                      ./img/portfolio/desktop/desktop-img3@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/portfolio/tablet/tablet-img3.jpg    1x,
+                      ./img/portfolio/tablet/tablet-img3@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./img/portfolio/mobile/mobile-img3.jpg    1x,
+                      ./img/portfolio/mobile/mobile-img3@2x.jpg 2x
+                    "
+                  />
+                  <img src="/img/portfolio/mobile/mobile-img3.jpg" alt="Приложение" width="100%" />
+                </picture>
                 <p class="portfolio__overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                   це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
@@ -157,14 +226,36 @@
                 </p>
               </div>
               <div class="portfolio_card-wrapper">
-                <h3 class="portfolio-card__title">Ресторан <span lang="en">Seafood</span>
-                </h3>
+                <h3 class="portfolio-card__title">Ресторан <span lang="en">Seafood</span></h3>
                 <p class="portfolio-card__text">Додаток</p>
               </div>
             </li>
             <li class="portfolio__card">
               <div class="portfolio-card__img-wrapper">
-                <img src="./img/img7.jpg" alt=">Маркетинг" width="370" height="294" />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./img/portfolio/desktop/desktop-img4.jpg    1x,
+                      ./img/portfolio/desktop/desktop-img4@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/portfolio/tablet/tablet-img4.jpg    1x,
+                      ./img/portfolio/tablet/tablet-img4@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./img/portfolio/mobile/mobile-img4.jpg    1x,
+                      ./img/portfolio/mobile/mobile-img4@2x.jpg 2x
+                    "
+                  />
+                  <img src="/img/portfolio/mobile/mobile-img4.jpg" alt=">Маркетинг" width="100%" />
+                </picture>
                 <p class="portfolio__overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                   це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
@@ -172,14 +263,36 @@
                 </p>
               </div>
               <div class="portfolio_card-wrapper">
-                <h3 class="portfolio-card__title">Проєкт <span lang="en">Prime</span>
-                </h3>
+                <h3 class="portfolio-card__title">Проєкт <span lang="en">Prime</span></h3>
                 <p class="portfolio-card__text">Маркетинг</p>
               </div>
             </li>
             <li class="portfolio__card">
               <div class="portfolio-card__img-wrapper">
-                <img src="./img/img8.jpg" alt="Приложение" width="370" height="294" />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./img/portfolio/desktop/desktop-img5.jpg    1x,
+                      ./img/portfolio/desktop/desktop-img5@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/portfolio/tablet/tablet-img5.jpg    1x,
+                      ./img/portfolio/tablet/tablet-img5@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./img/portfolio/mobile/mobile-img5.jpg    1x,
+                      ./img/portfolio/mobile/mobile-img5@2x.jpg 2x
+                    "
+                  />
+                  <img src="/img/portfolio/mobile/mobile-img5.jpg" alt="Приложение" width="100%" />
+                </picture>
                 <p class="portfolio__overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                   це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
@@ -187,14 +300,36 @@
                 </p>
               </div>
               <div class="portfolio_card-wrapper">
-                <h3 class="portfolio-card__title">Проєкт <span lang="en">Boxes</span>
-                </h3>
+                <h3 class="portfolio-card__title">Проєкт <span lang="en">Boxes</span></h3>
                 <p class="portfolio-card__text">Додаток</p>
               </div>
             </li>
             <li class="portfolio__card">
               <div class="portfolio-card__img-wrapper">
-                <img src="./img/img9.jpg" alt="Веб-сайт" width="370" height="294" />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./img/portfolio/desktop/desktop-img6.jpg    1x,
+                      ./img/portfolio/desktop/desktop-img6@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/portfolio/tablet/tablet-img6.jpg    1x,
+                      ./img/portfolio/tablet/tablet-img6@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./img/portfolio/mobile/mobile-img6.jpg    1x,
+                      ./img/portfolio/mobile/mobile-img6@2x.jpg 2x
+                    "
+                  />
+                  <img src="/img/portfolio/mobile/mobile-img6.jpg" alt="Веб-сайт" width="100%" />
+                </picture>
                 <p class="portfolio__overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                   це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
@@ -210,7 +345,30 @@
             </li>
             <li class="portfolio__card">
               <div class="portfolio-card__img-wrapper">
-                <img src="./img/img10.jpg" alt="Дизайн" width="370" height="294" />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./img/portfolio/desktop/desktop-img7.jpg    1x,
+                      ./img/portfolio/desktop/desktop-img7@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/portfolio/tablet/tablet-img7.jpg    1x,
+                      ./img/portfolio/tablet/tablet-img7@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./img/portfolio/mobile/mobile-img7.jpg    1x,
+                      ./img/portfolio/mobile/mobile-img7@2x.jpg 2x
+                    "
+                  />
+                  <img src="/img/portfolio/mobile/mobile-img7.jpg" alt="Дизайн" width="100%" />
+                </picture>
                 <p class="portfolio__overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                   це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
@@ -226,7 +384,30 @@
             </li>
             <li class="portfolio__card">
               <div class="portfolio-card__img-wrapper">
-                <img src="./img/img11.jpg" alt=">Маркетинг" width="370" height="294" />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./img/portfolio/desktop/desktop-img8.jpg    1x,
+                      ./img/portfolio/desktop/desktop-img8@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/portfolio/tablet/tablet-img8.jpg    1x,
+                      ./img/portfolio/tablet/tablet-img8@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./img/portfolio/mobile/mobile-img8.jpg    1x,
+                      ./img/portfolio/mobile/mobile-img8@2x.jpg 2x
+                    "
+                  />
+                  <img src="/img/portfolio/mobile/mobile-img8.jpg" alt=">Маркетинг" width="100%" />
+                </picture>
                 <p class="portfolio__overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                   це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
@@ -234,14 +415,36 @@
                 </p>
               </div>
               <div class="portfolio_card-wrapper">
-                <h3 class="portfolio-card__title">Проєкт <span lang="en">LAB</span>
-                </h3>
+                <h3 class="portfolio-card__title">Проєкт <span lang="en">LAB</span></h3>
                 <p class="portfolio-card__text">Маркетинг</p>
               </div>
             </li>
             <li class="portfolio__card">
               <div class="portfolio-card__img-wrapper">
-                <img src="./img/img12.jpg" alt="Приложение" width="370" height="294" />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./img/portfolio/desktop/desktop-img9.jpg    1x,
+                      ./img/portfolio/desktop/desktop-img9@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/portfolio/tablet/tablet-img9.jpg    1x,
+                      ./img/portfolio/tablet/tablet-img9@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./img/portfolio/mobile/mobile-img9.jpg    1x,
+                      ./img/portfolio/mobile/mobile-img9@2x.jpg 2x
+                    "
+                  />
+                  <img src="/img/portfolio/mobile/mobile-img9.jpg" alt="Приложение" width="100%" />
+                </picture>
                 <p class="portfolio__overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                   це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
@@ -249,22 +452,20 @@
                 </p>
               </div>
               <div class="portfolio_card-wrapper">
-                <h3 class="portfolio-card__title"><span lang="en">Growing Business</span>
-                </h3>
+                <h3 class="portfolio-card__title"><span lang="en">Growing Business</span></h3>
                 <p class="portfolio-card__text">Додаток</p>
               </div>
             </li>
-          </ul> -->
+          </ul>
         </div>
       </section>
     </main>
-    <!-- <footer class="footer">
-
+<footer class="footer">
       <div class="container footer-container">
         <div class="footer-contact-section">
-          <a class="logo link footer__logo" href="/"><span class="footer-web">Web</span>Studio</a>
+          <a class="footer__logo logo link" href="/"><span class="footer-web">Web</span>Studio</a>
           <address>
-            <ul class="list">
+            <ul class="footer-list list">
               <li class="footer-list__item">
                 <a
                   class="footer-list__link link"
@@ -273,17 +474,17 @@
                 >
               </li>
               <li class="footer-list__item">
-                <a class="footer-contact link" href="info@example.com">info@example.com</a>
+                <a class="footer-contact link" href="info@devstudio.com">info@devstudio.com</a>
               </li>
               <li class="footer-list__item">
-                <a class="footer-contact link" href="tel:+380961111111">+38 099 111 11 11</a>
+                <a class="footer-contact link" href="tel:+380961111111">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
         </div>
         <div class="footer-join">
           <h3 class="footer-join__text">Приєднуйтесь</h3>
-          <ul class="footer-social-menu list">
+          <ul class="social-list footer-social-menu list">
             <li class="footer-social-menu__item">
               <a href="" class="footer-social-menu__link">
                 <svg class="footer-social-menu__icon">
@@ -315,18 +516,16 @@
           </ul>
         </div>
         <form class="footer-form">
-          <label for="send">
-            <span class="footer-form__label"> Підпишіться на розсилку </span>
-          </label>
-          <div class="footer-form__wrapper">
-            <input
-              class="footer-form__input"
-              type="email"
-              name="user_email"
-              id="send"
-              placeholder="E-mail"
-            />
-            <button type="submit" class="footer-form__btn-send">
+          <label for="send" class="footer-form__label">Підпишіться на розсилку</label>
+          <input
+            class="footer-form__input"
+            type="email"
+            name="user_email"
+            id="send"
+            placeholder="E-mail"
+          />
+          <div class="footer-form__btn-wrapper">
+            <button type="submit" class="footer-form__btn-send btn-send">
               Підписатися
               <svg class="btn-send__icon" width="24" height="24">
                 <use href="./img/icons.svg#send"></use>
@@ -335,7 +534,7 @@
           </div>
         </form>
       </div>
-    </footer> -->
+    </footer>
     <script src="./js/mobile-menu.js"></script>
     <!-- <script src="./js/modal.js"></script> -->
   </body>
