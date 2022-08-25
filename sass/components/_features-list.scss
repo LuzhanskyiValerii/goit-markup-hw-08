@@ -26,11 +26,9 @@
 }
 
 @media screen and (min-width: 768px) {
-.features__item {
-  align-items: flex-start;
-
-}
-
+  .features__item {
+    align-items: flex-start;
+  }
   .features__item {
     flex-basis: calc((100% - 30px) / 2);
   }
@@ -44,4 +42,3 @@
     flex-basis: calc((100% - 90px) / 4);
   }
 }
-
