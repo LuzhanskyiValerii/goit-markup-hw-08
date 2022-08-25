@@ -1207,10 +1207,17 @@ img {
 .portfolio-menu {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
+@media screen and (max-width: 767px) {
+  .portfolio-menu__item {
+    margin-bottom: 15px;
+  }
+  .portfolio-menu__item:not(:last-child) {
+    margin-right: 8px;
+  }
+}
 .portfolio__button {
   padding: 6px 25px;
   border-radius: 4px;

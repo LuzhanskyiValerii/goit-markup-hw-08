@@ -5,9 +5,17 @@
 .portfolio-menu {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
+@media screen and (max-width: 767px) {
+  .portfolio-menu__item {
+    margin-bottom: 15px;
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+}
+
 .portfolio__button {
   padding: 6px 25px;
   border-radius: 4px;
@@ -108,11 +116,10 @@
     flex-grow: 1;
   }
   .portfolio__overlay {
-  
-  .portfolio__card:hover & {
-    transform: translate(0, 0%);
+    .portfolio__card:hover & {
+      transform: translate(0, 0%);
+    }
   }
-}
 }
 @media screen and (min-width: 1200px) {
   .portfolio {
@@ -132,9 +139,9 @@
   }
   .portfolio__overlay {
     .portfolio__card:hover & {
-    transform: translate(0, 0%);
+      transform: translate(0, 0%);
+    }
   }
-}
 }
 
 // .portfolio {
